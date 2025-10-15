@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cuisine Chronicles | BLOGS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        #one h2, #two h2 {
+            font-size: 70px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        #one p, #two p {
+            margin-top: 25px;
+            font-size: 25px;
+            text-align: justify;
+            text-indent: 1em;
+            font-weight: lighter;
+        }
+        #one img ,#two img {
+            border-radius: 25px;
+            height: 650px;
+        }
+        #navbarNav a:hover{
+            color: rgb(131, 38, 22);
+            transition: 1s;
+        }
+        hr{
+            border: 0;
+            border-top: 5px dashed rgb(255, 38, 0);
+        }
+        #button:hover{
+            color: rgb(0, 0, 0);
+        }
+        #one img, #two img{
+            border-radius: 25px;
+            margin-left: 15px;
+            border: 2px solid rgb(58, 57, 57);
+        }
+        #one img:hover{
+            transform: scale(1.03);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #two img:hover{
+            transform: scale(1.03);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #one h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        #two h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        .text-center{
+            border-radius: 500px;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 79, 79, 0.493);
+        }
+        footer {
+            background: linear-gradient(to right, rgb(255, 175, 109), rgb(255, 138, 118));
+            width: 100%;
+            bottom: 0;
+            color: white;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            border-top-right-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        footer .row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        footer .col{
+            flex-basis: 25%;
+            padding: 5px;
+        }
+        footer .logo{
+            width: 170px;
+            margin-bottom: 10px;
+        }
+        footer .col h3{
+            width: fit-content;
+            margin-bottom: 10px;
+            position: relative;
+            margin-left: 30px;
+        }
+        footer .col p, .col li{
+            color: white;
+            margin-bottom: 5px;
+            margin-left: 30px;
+        }
+        footer .col form{
+            margin-left: 30px;
+        }
+        footer .social{
+            margin-left: 30px;
+        }
+        footer .social .fab{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: tomato;
+            margin-right: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        @media (max-width: 1200px) {
+            #one h2, #two h2 {
+                font-size: 60px;
+            }
+            #one p, #two p {
+                font-size: 22px;
+            }
+            #one img, #two img {
+                height: 550px;
+            }
+        }
+        @media (max-width: 992px) {
+            #one h2, #two h2 {
+                font-size: 50px;
+            }
+            #one p, #two p {
+                font-size: 20px;
+            }
+            #one img, #two img {
+                height: 450px;
+            }
+        }
+        @media (max-width: 768px) {
+            #one h2, #two h2 {
+                font-size: 40px;
+            }
+            #one p, #two p {
+                font-size: 18px;
+            }
+            #one img, #two img {
+                height: 350px;
+            }
+            footer .row {
+                flex-direction: column;
+            }
+            footer .col {
+                flex-basis: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            #one h2, #two h2 {
+                font-size: 30px;
+            }
+            #one p, #two p {
+                font-size: 16px;
+            }
+            #one img, #two img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: tomato;">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="about.html">College Cuisine Chronicles</a>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope"></i> NEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-check"></i> REVIEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="rev.html">Food Review</a></li>
+                            <li><a class="dropdown-item" href="photo.html">Photographs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-images"></i> LIFESTYLE</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="hacks.html">Hacks</a></li>
+                            <li><a class="dropdown-item" href="planner.html">Food Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hotdog"></i> FOODS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a href="subs.html" class="nav-item nav-link"><span><i class="fas fa-envelope"></i> SUBSCRIBE</span></a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="Main.html" class="nav-item nav-link"><span><i class="fas fa-house"></i> HOME</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Shake it Up: Exploring the World of Irresistible Shake Drinks</h2>
+                    <p class="text-muted lead">by Melody Neypes | 20:54 May 9, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/shake.jpg" alt="Shake" class="img-fluid"></div>
+                    <p>Shake drinks have long been a beloved indulgence for people of all ages, offering a delightful combination of creamy textures and irresistible flavors. 
+                        From classic milkshakes to innovative fruit blends, there's a shake for every palate and occasion. 
+                        In this blog post, we'll take a tantalizing journey into the world of shake drinks, exploring their rich history, diverse varieties, and undeniable appeal.
+                    <p>
+                        The beauty of shake drinks lies in their versatility. 
+                        Whether you're craving something sweet and indulgent or light and refreshing, there's a shake to satisfy your every whim. Classic flavors like chocolate, vanilla, and strawberry evoke nostalgia and comfort, while exotic combinations like mango coconut and matcha green tea offer a taste of adventure. 
+                        With endless possibilities for customization, shake drinks allow you to unleash your creativity and tailor each sip to your unique preferences.
+                    </p>
+                    <p>
+                        Beyond their delicious taste, shake drinks also offer a sensory experience unlike any other. 
+                        The sound of ice cubes clinking against the blender, the sight of creamy swirls cascading into a frosty glass, and the aroma of freshly blended ingredients coming together in perfect harmony—every aspect of enjoying a shake is a feast for the senses. 
+                        Whether you're enjoying a shake solo or sharing one with friends and family, each sip is an invitation to savor the moment and indulge in pure bliss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><hr><br><br>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="two">
+            <h1>RECOMMENDATION</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Pearls and Jewels: The Refreshing Delight of Sago at Gulaman</h2>
+                    <p class="text-muted lead">by Angela Jade Casipit | 20:54 May 9, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/sg.jpg" alt="Sago at Gulaman" class="img-fluid"></div>
+                    <p>Sago at gulaman is a vibrant and refreshing Filipino dessert that's as pleasing to the eye as it is to the palate. 
+                        This delightful concoction features translucent sago pearls, chewy tapioca balls, and strips of agar-agar jelly (gulaman) swimming in a chilled coconut milk base. 
+                        The sweetness is usually adjustable with syrup or honey, allowing you to customize the flavor to your preference.  
+                        Each spoonful offers a delightful burst of textures and a symphony of cool sweetness, making sago at gulaman the perfect way to beat the heat or end a meal on a light and refreshing note.
+                    <p>
+                        Sago at gulaman is not just a dessert; it's a celebration of Filipino culinary ingenuity and creativity. 
+                        With its vibrant colors and delightful textures, this dessert is not only a treat for the taste buds but also a feast for the eyes. 
+                        Whether enjoyed as a refreshing snack on a hot summer day or as a sweet conclusion to a hearty Filipino meal, sago at gulaman embodies the essence of Filipino hospitality and warmth, leaving a lasting impression on anyone lucky enough to indulge in its delightful flavors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+    <div class="text-center" style="position: relative;">
+        <a class="btn btn-primary btn-lg fs-3" style="background-color: tomato; position: absolute; right: 113px;" href="trending.html" role="button" id="button">See more posts</a>
+    </div>
+    
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="pics/logo.png" class="logo" alt="logo">
+                <p>Subscribe to College Cuisine Chronicles for more fresh food news, reviews, and guides served up daily.</p>
+            </div>
+            <div class="col">
+                <h3>ABOUT</h3>
+                <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+                <p>Privacy Policy & Terms of Use</p>
+                <a href="subs.html" class="text-decoration-none"><p>Write Us</p></a>
+            </div>
+            <div class="col">
+                <h3>SECTIONS</h3>
+                        <ul class="list-unstyled">
+                            <a class="text-decoration-none text-muted" href="trending.html"><li>Trending</li></a>
+                            <a class="text-decoration-none text-muted" href="rev.html"><li>Food Review</li></a>
+                            <a class="text-decoration-none text-muted" href="photo.html"><li>Photographs</li></a>
+                            <a class="text-decoration-none text-muted" href="hacks.html"><li>Hacks</li></a>
+                            <a class="text-decoration-none text-muted" href="planner.html"><li>Food Planner</li></a>
+                            <a class="text-decoration-none text-muted" href="food.html"><li>Foods</li></a>
+                            <a class="text-decoration-none text-muted" href="drinks.html"><li>Drinks</li></a>
+                        </ul>
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: tomato;" id="button">SUBSCRIBE</button> <br>
+                    <caption>You tryna be tricky? That email doesn't look right.</caption>
+                </form>
+                <div class="social">
+                    <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="about.html"><i class="fab fa-twitter"></i></a>
+                    <a href="about.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: center;"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+                Alaminos City, Pangasinan</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

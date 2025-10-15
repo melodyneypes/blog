@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cuisine Chronicles | SUBSCRIBE</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        #subs .col-lg-12{
+            border: 2px dashed tomato;
+        }
+        #navbarNav a:hover{
+            color: rgb(131, 38, 22);
+            transition: 1s;
+        }
+        h3{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 50px;
+            text-align: justify;
+        }
+        #subs h1:hover{
+            color: tomato;
+            transition: 1s;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        hr{
+            border: 0;
+            border-top: 5px solid rgb(255, 38, 0);
+        }
+        #button:hover{
+            color: rgb(0, 0, 0);
+            transition: 1s;
+        }
+        #more h2{
+            font-size: 70px;
+        }
+        #more h2:hover{
+            color: tomato;
+            transition: 1s;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        #more .card:hover{
+            transform: scale(1.01);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #more .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        #more .card {
+            flex: 0 0 calc(40% - 120px);
+            margin: 15px;
+        }
+        hr{
+            border: 0;
+            border-top: 5px dashed rgb(255, 38, 0);
+        }
+        footer {
+            background: linear-gradient(to right, rgb(255, 175, 109), rgb(255, 138, 118));
+            width: 100%;
+            bottom: 0;
+            color: white;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            border-top-right-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        footer .row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        footer .col{
+            flex-basis: 25%;
+            padding: 5px;
+        }
+        footer .logo{
+            width: 170px;
+            margin-bottom: 10px;
+        }
+        footer .col h3{
+            width: fit-content;
+            margin-bottom: 10px;
+            position: relative;
+            margin-left: 30px;
+        }
+        footer .col p, .col li{
+            color: white;
+            margin-bottom: 5px;
+            margin-left: 30px;
+        }
+        footer .col form{
+            margin-left: 30px;
+        }
+        footer .social{
+            margin-left: 30px;
+        }
+        footer .social .fab{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: tomato;
+            margin-right: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        @media (max-width: 1200px) {
+            #more .text-center {
+                font-size: 40px;
+            }
+            #more h2 {
+                font-size: 50px;
+            }
+            #more .card {
+                flex: 0 0 calc(100% - 40px);
+            }
+            footer .col {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+            footer .row {
+                width: 100%;
+            }
+            footer {
+                padding: 50px 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: tomato;">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="about.html">College Cuisine Chronicles</a>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope"></i> NEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-check"></i> REVIEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="rev.html">Food Review</a></li>
+                            <li><a class="dropdown-item" href="photo.html">Photographs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-images"></i> LIFESTYLE</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="hacks.html">Hacks</a></li>
+                            <li><a class="dropdown-item" href="planner.html">Food Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hotdog"></i> FOODS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a href="Main.html" class="nav-item nav-link"><span><i class="fas fa-house"></i> HOME</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5" id="subs">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="more-info">
+                    <h1 class="tagline">Fresh food news, reviews, and guides served up daily.</h1>
+                    <h3>Subscribe to College Cuisine Chronicles Daily</h3>
+                    <ul class="list-inline fs-3">
+                        <li class="list-inline-item"><a href="about.html"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="about.html"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="about.html"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <section class="newsletter">
+                        <form class="subscribe-validate" name="subscribe-form" id="mc-embedded-subscribe-form">
+                            <header>
+                                <h3>Get <span>College Cuisine Chronicles</span> delivered to you</h3>
+                            </header>
+                            <input type="email" placeholder="your@email.com" class="email fs-3" name="EMAIL">
+                            <button type="submit" class="btn btn-primary btn-lg" style="background-color: tomato;" id="button">SUBSCRIBE</button>
+                            <p>You tryna be tricky? That email doesn't look right.</p>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" tabindex="-1" value="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 mt-5" id="more">
+        <h2 class="text-center mb-3">MORE STORIES</h2>
+        <hr>
+        <div class="row mt-5">
+            <div class="card col-md-4 mb-5">  
+                <a href="blog-4.html"><img src="pics/pizza.jpg" class="card-img-top" alt="Pizza"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-4.html"><h5 class="card-title">The Timeless Allure of Pizza</h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Angela Jade Casipit</i></small>
+            </div>
+            </div>
+
+            <div class="card col-md-4 mb-5">  
+                <a href="blog-5.html"><img src="pics/halo-halo.jpg" class="card-img-top" alt="Halo-Halo"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-5.html"><h5 class="card-title">Halo-Halo: A Symphony of Flavors</h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Angela Jade Casipit</i></small>
+            </div>
+            </div>
+
+            <div class="card col-md-4 mb-5">  
+                <a href="blog-6.html"><img src="pics/sf.jpg" class="card-img-top" alt="Street Foods"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-6.html"><h5 class="card-title">Street Foods: A Culinary Adventure</h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Angela Jade Casipit</i></small>
+            </div>
+            </div>
+
+            <div class="card col-md-4 mb-3">  
+                <a href="blog-7.html"><img src="pics/balot.jpg" class="card-img-top" alt="Balut"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-7.html"><h5 class="card-title"><small class="text-muted"><i>Balut: A Culinary Delicacy with a Unique Appeal</i></small></h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Angela Jade Casipit</i></small>
+            </div>
+            </div>
+
+            <div class="card col-md-4 mb-3">  
+                <a href="blog-11.html"><img src="pics/boodle.jpg" class="card-img-top" alt="Boodle"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-11.html"><h5 class="card-title">The Boodle Fight Experience</h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Katherine Celino</i></small>
+            </div>
+            </div>
+
+            <div class="card col-md-4 mb-3">  
+                <a href="blog-12.html"><img src="pics/lugaw.jpg" class="card-img-top" alt="Lugaw"></a>
+            <div class="card-body">
+                <a class="text-decoration-none" href="blog-12.html"><h5 class="card-title">Lugaw with Egg and Tofu: A Comforting Culinary Harmony</h5></a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><i>by Katherine Celino</i></small>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center" id="see-more">
+        <a class="btn btn-primary btn-lg justify-content-right mb-5 fs-5" style="background-color: tomato;" href="hacks.html" role="button" id="button">See More</a>
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="pics/logo.png" class="logo" alt="logo">
+                <p>Subscribe to College Cuisine Chronicles for more fresh food news, reviews, and guides served up daily.</p>
+            </div>
+            <div class="col">
+                <h3>ABOUT</h3>
+                <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+                <p>Privacy Policy & Terms of Use</p>
+                <a href="subs.html" class="text-decoration-none"><p>Write Us</p></a>
+            </div>
+            <div class="col">
+                <h3>SECTIONS</h3>
+                        <ul class="list-unstyled">
+                            <a class="text-decoration-none text-muted" href="trending.html"><li>Trending</li></a>
+                            <a class="text-decoration-none text-muted" href="rev.html"><li>Food Review</li></a>
+                            <a class="text-decoration-none text-muted" href="photo.html"><li>Photographs</li></a>
+                            <a class="text-decoration-none text-muted" href="hacks.html"><li>Hacks</li></a>
+                            <a class="text-decoration-none text-muted" href="planner.html"><li>Food Planner</li></a>
+                            <a class="text-decoration-none text-muted" href="food.html"><li>Foods</li></a>
+                            <a class="text-decoration-none text-muted" href="drinks.html"><li>Drinks</li></a>
+                        </ul>
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: tomato;" id="button">SUBSCRIBE</button> <br>
+                    <caption>You tryna be tricky? That email doesn't look right.</caption>
+                </form>
+                <div class="social">
+                    <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="about.html"><i class="fab fa-twitter"></i></a>
+                    <a href="about.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+                Alaminos City, Pangasinan</p>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

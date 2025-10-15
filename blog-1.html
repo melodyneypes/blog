@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cuisine Chronicles | BLOGS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        #bbq h2, #rec h2 {
+            font-size: 70px;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+        #bbq p, #rec p {
+            margin-top: 25px;
+            font-size: 25px;
+            text-align: justify;
+            text-indent: 1em;
+            font-weight: lighter;
+        }
+        #bbq img ,#rec img {
+            border-radius: 25px;
+            height: 650px;
+        }
+        #navbarNav a:hover{
+            color: rgb(131, 38, 22);
+            transition: 1s;
+        }
+        hr{
+            border: 0;
+            border-top: 5px dashed rgb(255, 38, 0);
+        }
+        #button:hover{
+            color: rgb(0, 0, 0);
+        }
+        #bbq img, #rec img{
+            border-radius: 25px;
+            margin-left: 15px;
+            border: 2px solid rgb(58, 57, 57);
+        }
+        #bbq img:hover{
+            transform: scale(1.04);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #rec img:hover{
+            transform: scale(1.04);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #bbq h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        #rec h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        .text-center{
+            border-radius: 500px;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 79, 79, 0.493);
+        }
+        footer {
+            background: linear-gradient(to right, rgb(255, 175, 109), rgb(255, 138, 118));
+            width: 100%;
+            bottom: 0;
+            color: white;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            border-top-right-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        footer .row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        footer .col{
+            flex-basis: 25%;
+            padding: 5px;
+        }
+        footer .logo{
+            width: 170px;
+            margin-bottom: 10px;
+        }
+        footer .col h3{
+            width: fit-content;
+            margin-bottom: 10px;
+            position: relative;
+            margin-left: 30px;
+        }
+        footer .col p, .col li{
+            color: white;
+            margin-bottom: 5px;
+            margin-left: 30px;
+        }
+        footer .col form{
+            margin-left: 30px;
+        }
+        footer .social{
+            margin-left: 30px;
+        }
+        footer .social .fab{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: tomato;
+            margin-right: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        @media (max-width: 1200px) {
+            #bbq h2, #rec h2 {
+                font-size: 60px;
+            }
+            #bbq p, #rec p {
+                font-size: 22px;
+            }
+            #bbq img, #rec img {
+                height: 550px;
+            }
+        }
+        @media (max-width: 992px) {
+            #bbq h2, #rec h2 {
+                font-size: 50px;
+            }
+            #bbq p, #rec p {
+                font-size: 20px;
+            }
+            #bbq img, #rec img {
+                height: 450px;
+            }
+        }
+        @media (max-width: 768px) {
+            #bbq h2, #rec h2 {
+                font-size: 40px;
+            }
+            #bbq p, #rec p {
+                font-size: 18px;
+            }
+            #bbq img, #rec img {
+                height: 350px;
+            }
+            footer .row {
+                flex-direction: column;
+            }
+            footer .col {
+                flex-basis: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            #bbq h2, #rec h2 {
+                font-size: 30px;
+            }
+            #bbq p, #rec p {
+                font-size: 16px;
+            }
+            #bbq img, #rec img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: tomato;">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="about.html">College Cuisine Chronicles</a>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope"></i> NEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-check"></i> REVIEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="rev.html">Food Review</a></li>
+                            <li><a class="dropdown-item" href="photo.html">Photographs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-images"></i> LIFESTYLE</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="hacks.html">Hacks</a></li>
+                            <li><a class="dropdown-item" href="planner.html">Food Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hotdog"></i> FOODS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a href="subs.html" class="nav-item nav-link"><span><i class="fas fa-envelope"></i> SUBSCRIBE</span></a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="Main.html" class="nav-item nav-link"><span><i class="fas fa-house"></i> HOME</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="bbq">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Barbecue: A Timeless Tradition</h2>
+                    <p class="text-muted lead">by Angela Jade Casipit | 12:45 May 1, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/bbq-1.jpg" alt="Bbq" class="img-fluid"></div>
+                    <p>Barbecue, a culinary tradition deeply rooted in cultures around the world, brings people together with the irresistible aroma of sizzling meat and savory sauces. 
+                        Whether it's tender ribs slathered in smoky barbecue sauce or charred skewers of marinated chicken, the art of barbecue transcends borders, uniting communities in the shared joy of outdoor cooking. 
+                        From backyard gatherings to bustling street stalls, the allure of barbecue lies in its simplicity and versatility, offering endless possibilities for flavor exploration.
+                       </p>
+                    <p>At the heart of barbecue culture is the ritual of slow-cooking over an open flame, infusing meats with rich, smoky flavors that awaken the senses. 
+                        It's more than just a method of cooking; it's a celebration of craftsmanship and patience, where hours of slow roasting culminate in succulent, melt-in-your-mouth perfection. 
+                        Whether enjoyed at a summer cookout or a roadside stand, barbecue embodies the spirit of camaraderie and indulgence, reminding us that some of life's greatest pleasures are best shared with good company and great food.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><hr><br><br>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="rec">
+            <h1>RECOMMENDATION</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Samgyeopsal: The Korean BBQ Delight</h2>
+                    <p class="text-muted lead">by Angela Jade Casipit | 15:54 May 1, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/samgyup.jpg" alt="Samgyeopsal" class="img-fluid"></div>
+                    <p>Samgyeopsal, with its origins deeply intertwined with Korean culture, transcends mere sustenance to become a cultural emblem. 
+                        Beyond its delectable taste, samgyeopsal embodies the spirit of togetherness and conviviality that defines Korean social gatherings. 
+                        Families, friends, and even strangers come together around the grill, engaging in lively conversations as they watch the pork belly slices sizzle and caramelize to perfection. </p>
+                    <p>
+                        The communal aspect of samgyeopsal dining extends beyond the act of cooking and eating. 
+                        It serves as a platform for bonding and forging meaningful connections. 
+                        In a world where digital interactions often dominate, the tradition of sharing a meal around a grill offers a refreshing opportunity for genuine human connection. 
+                        It's a time to unwind, share stories, and create lasting memories with loved ones.
+                    </p>
+                    <P>
+                        Moreover, samgyeopsal embodies the essence of Korean hospitality. 
+                        The meticulous preparation of the meat, the array of vibrant banchan meticulously arranged on the table, and the attentive service from restaurant staff—all contribute to an immersive dining experience that leaves a lasting impression.
+                    </P>
+                    <P>
+                        As one indulges in the flavors of samgyeopsal, they're not just enjoying a meal; they're partaking in a cultural journey—a celebration of Korea's culinary heritage and traditions. 
+                        Each bite is a testament to the country's rich history, passed down through generations and cherished by all who partake in its delights.
+                    </P>
+                    <P>
+                        In essence, samgyeopsal isn't just food; it's an experience—a celebration of community, culture, and connection. 
+                        It's a reminder of the power of shared meals to nourish not only the body but also the soul. 
+                        So the next time you sit down to enjoy a platter of sizzling samgyeopsal, take a moment to appreciate the deeper meaning behind this beloved Korean BBQ delight.
+                    </P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="text-center" style="position: relative;">
+        <a class="btn btn-primary btn-lg fs-3" style="background-color: tomato; position: absolute; right: 113px;" href="trending.html" role="button" id="button">See more posts</a>
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="pics/logo.png" class="logo" alt="logo">
+                <p>Subscribe to College Cuisine Chronicles for more fresh food news, reviews, and guides served up daily.</p>
+            </div>
+            <div class="col">
+                <h3>ABOUT</h3>
+                <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+                <p>Privacy Policy & Terms of Use</p>
+                <a href="subs.html" class="text-decoration-none"><p>Write Us</p></a>
+            </div>
+            <div class="col">
+                <h3>SECTIONS</h3>
+                        <ul class="list-unstyled">
+                            <a class="text-decoration-none text-muted" href="trending.html"><li>Trending</li></a>
+                            <a class="text-decoration-none text-muted" href="rev.html"><li>Food Review</li></a>
+                            <a class="text-decoration-none text-muted" href="photo.html"><li>Photographs</li></a>
+                            <a class="text-decoration-none text-muted" href="hacks.html"><li>Hacks</li></a>
+                            <a class="text-decoration-none text-muted" href="planner.html"><li>Food Planner</li></a>
+                            <a class="text-decoration-none text-muted" href="food.html"><li>Foods</li></a>
+                            <a class="text-decoration-none text-muted" href="drinks.html"><li>Drinks</li></a>
+                        </ul>
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: tomato;" id="button">SUBSCRIBE</button> <br>
+                    <caption>You tryna be tricky? That email doesn't look right.</caption>
+                </form>
+                <div class="social">
+                    <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="about.html"><i class="fab fa-twitter"></i></a>
+                    <a href="about.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: center;"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+                Alaminos City, Pangasinan</p>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

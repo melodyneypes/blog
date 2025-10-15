@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cuisine Chronicles | BLOGS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        #one h2, #two h2 {
+            font-size: 70px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        #one p, #two p {
+            margin-top: 25px;
+            font-size: 25px;
+            text-align: justify;
+            text-indent: 1em;
+            font-weight: lighter;
+        }
+        #one img ,#two img {
+            border-radius: 25px;
+            height: 650px;
+        }
+        #navbarNav a:hover{
+            color: rgb(131, 38, 22);
+            transition: 1s;
+        }
+        hr{
+            border: 0;
+            border-top: 5px dashed rgb(255, 38, 0);
+        }
+        #button:hover{
+            color: rgb(0, 0, 0);
+        }
+        #one img, #two img{
+            border-radius: 25px;
+            margin-left: 15px;
+            border: 2px solid rgb(58, 57, 57);
+        }
+        #one img:hover{
+            transform: scale(1.03);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #two img:hover{
+            transform: scale(1.03);
+            box-shadow: 2px 2px 4px gray;
+        }
+        #one h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        #two h2:hover{
+            color: tomato;
+            text-shadow: -1px -1px 0 black, 1px -1px black, -1px 1px black, 1px 1px black;
+        }
+        .text-center{
+            border-radius: 500px;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 79, 79, 0.493);
+        }
+        footer {
+            background: linear-gradient(to right, rgb(255, 175, 109), rgb(255, 138, 118));
+            width: 100%;
+            bottom: 0;
+            color: white;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            border-top-right-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        footer .row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        footer .col{
+            flex-basis: 25%;
+            padding: 5px;
+        }
+        footer .logo{
+            width: 170px;
+            margin-bottom: 10px;
+        }
+        footer .col h3{
+            width: fit-content;
+            margin-bottom: 10px;
+            position: relative;
+            margin-left: 30px;
+        }
+        footer .col p, .col li{
+            color: white;
+            margin-bottom: 5px;
+            margin-left: 30px;
+        }
+        footer .col form{
+            margin-left: 30px;
+        }
+        footer .social{
+            margin-left: 30px;
+        }
+        footer .social .fab{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: tomato;
+            margin-right: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        @media (max-width: 1200px) {
+            #one h2, #two h2 {
+                font-size: 60px;
+            }
+            #one p, #two p {
+                font-size: 22px;
+            }
+            #one img, #two img {
+                height: 550px;
+            }
+        }
+        @media (max-width: 992px) {
+            #one h2, #two h2 {
+                font-size: 50px;
+            }
+            #one p, #two p {
+                font-size: 20px;
+            }
+            #one img, #two img {
+                height: 450px;
+            }
+        }
+        @media (max-width: 768px) {
+            #one h2, #two h2 {
+                font-size: 40px;
+            }
+            #one p, #two p {
+                font-size: 18px;
+            }
+            #one img, #two img {
+                height: 350px;
+            }
+            footer .row {
+                flex-direction: column;
+            }
+            footer .col {
+                flex-basis: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            #one h2, #two h2 {
+                font-size: 30px;
+            }
+            #one p, #two p {
+                font-size: 16px;
+            }
+            #one img, #two img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: tomato;">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="about.html">College Cuisine Chronicles</a>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope"></i> NEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-check"></i> REVIEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="rev.html">Food Review</a></li>
+                            <li><a class="dropdown-item" href="photo.html">Photographs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-images"></i> LIFESTYLE</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="hacks.html">Hacks</a></li>
+                            <li><a class="dropdown-item" href="planner.html">Food Planner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLifestyles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-hotdog"></i> FOODS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLifestyles">
+                            <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a href="subs.html" class="nav-item nav-link"><span><i class="fas fa-envelope"></i> SUBSCRIBE</span></a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="Main.html" class="nav-item nav-link"><span><i class="fas fa-house"></i> HOME</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Indulging in Jollibee's Irresistible Delights: A Celebration of Filipino Fast Food</h2>
+                    <p class="text-muted lead">by Melody Neypes | 20:54 May 9, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/28.jpg" alt="Jollibee" class="img-fluid"></div>
+                    <p>Join us on a delectable journey through the flavors of Filipino fast food as we explore the iconic offerings of Jollibee, a beloved chain renowned for its comforting dishes and vibrant tastes. 
+                        From the crispy delights of Chickenjoy to the creamy sweetness of sundaes and the satisfying crunch of fries, Jollibee promises a culinary experience that captivates the senses and warms the heart.
+                    <p>
+                        At the core of Jollibee's menu lies Chickenjoy, a culinary masterpiece that has captured the hearts of millions with its irresistible blend of flavors and textures. 
+                        Marinated in a secret combination of spices, each piece of Chickenjoy boasts a crispy golden exterior that gives way to tender, juicy meat. 
+                        Paired with a side of savory gravy for dipping, Chickenjoy offers a taste of home and comfort that keeps diners coming back for more.
+
+                    </p>
+                    <p>
+                        No visit to Jollibee is complete without indulging in their signature sundaes and fries. 
+                        The sundaes, available in classic flavors like chocolate and vanilla, or tropical favorites like mango, are a delightful treat for those with a sweet tooth. 
+                        Topped with swirls of creamy soft-serve ice cream and drizzled with rich syrup, Jollibee sundaes offer a perfect balance of sweetness and creaminess. 
+                        Meanwhile, the iconic Jollibee fries, crispy and golden, are seasoned to perfection and serve as the ideal accompaniment to any meal. 
+                        Whether enjoyed on their own or dipped in ketchup or gravy, Jollibee fries are a crunchy delight that leaves diners craving for more.
+                    </p>
+                    <p>
+                        In essence, Jollibee's menu is a celebration of Filipino flavors and comforts, offering a diverse selection of dishes that cater to every taste preference. 
+                        Whether it's the crispy goodness of Chickenjoy, the creamy indulgence of sundaes, or the satisfying crunch of fries, Jollibee promises a culinary experience that is both familiar and exciting. 
+                        So come and experience the joy of Filipino fast food at Jollibee, where every bite is a taste of home.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><hr><br><br>
+
+    <div class="mt-5 pt-5">
+        <div class="container" id="two">
+            <h1>RECOMMENDATION</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Iced Coffee: A Cool Twist on a Classic Brew</h2>
+                    <p class="text-muted lead">by Katherine Celino | 20:54 May 9, 2024</p>
+                    <div class="text-center">
+                    <img src="pics/ic.jpg" alt="Iced Coffee" class="img-fluid"></div>
+                    <p>Iced coffee, a beloved beverage enjoyed worldwide, offers a refreshing take on the traditional cup of joe. 
+                        With its chilled demeanor and invigorating taste, it has become a staple for coffee enthusiasts, especially during warmer months.
+                        Its ability to adapt to different tastes and lifestyles ensures its place as a timeless classic in the world of coffee culture. 
+                        So the next time you're craving a cool pick-me-up, reach for a frosty glass of iced coffee and savor the satisfying sip of this iconic brew.
+                    <p>
+                        Furthermore, iced coffee's rise to prominence has sparked innovation in the coffee industry, leading to the development of ready-to-drink bottled varieties, specialty iced coffee blends, and gourmet coffee shops dedicated solely to crafting the perfect cold brew. 
+                        This continuous evolution ensures that iced coffee remains a dynamic and exciting part of coffee culture, constantly evolving to meet the demands of discerning consumers.
+                    </p>
+                    <p>
+                        So whether you're sipping it on a bustling city street or lounging on a sunny patio, iced coffee's refreshing taste and adaptability make it the perfect companion for any occasion. 
+                        With each sip, you're not just enjoying a beverage; you're experiencing a timeless classic that continues to captivate and inspire coffee lovers around the globe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+    <div class="text-center" style="position: relative;">
+        <a class="btn btn-primary btn-lg fs-3" style="background-color: tomato; position: absolute; right: 113px;" href="trending.html" role="button" id="button">See more posts</a>
+    </div>
+    
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="pics/logo.png" class="logo" alt="logo">
+                <p>Subscribe to College Cuisine Chronicles for more fresh food news, reviews, and guides served up daily.</p>
+            </div>
+            <div class="col">
+                <h3>ABOUT</h3>
+                <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+                <p>Privacy Policy & Terms of Use</p>
+                <a href="subs.html" class="text-decoration-none"><p>Write Us</p></a>
+            </div>
+            <div class="col">
+                <h3>SECTIONS</h3>
+                        <ul class="list-unstyled">
+                            <a class="text-decoration-none text-muted" href="trending.html"><li>Trending</li></a>
+                            <a class="text-decoration-none text-muted" href="rev.html"><li>Food Review</li></a>
+                            <a class="text-decoration-none text-muted" href="photo.html"><li>Photographs</li></a>
+                            <a class="text-decoration-none text-muted" href="hacks.html"><li>Hacks</li></a>
+                            <a class="text-decoration-none text-muted" href="planner.html"><li>Food Planner</li></a>
+                            <a class="text-decoration-none text-muted" href="food.html"><li>Foods</li></a>
+                            <a class="text-decoration-none text-muted" href="drinks.html"><li>Drinks</li></a>
+                        </ul>
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: tomato;" id="button">SUBSCRIBE</button> <br>
+                    <caption>You tryna be tricky? That email doesn't look right.</caption>
+                </form>
+                <div class="social">
+                    <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="about.html"><i class="fab fa-twitter"></i></a>
+                    <a href="about.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: center;"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+                Alaminos City, Pangasinan</p>
+        </div>
+    </footer>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
